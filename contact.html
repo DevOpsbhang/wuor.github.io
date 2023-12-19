@@ -94,39 +94,24 @@
 
         <div class="row d-flex contact-info mb-5">
 
-            <form class="row g-3" action="" method="POST">
-
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display: none;">
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-
-                <div class="col-md-6">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="Name" placeholder="Enter your first name"
+            
+            <form id="contact-form" class="row g-3" action="mail.php" method="POST">
+                <div class="col-md-12">
+                    <input type="text" class="form-control" name="name" placeholder="Enter Your Name"
                         required>
                 </div>
 
-                <div class="col-md-6">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="Last&nbsp;Name" placeholder="Enter your last name"
-                        required>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
                 </div>
 
-                <div class="col-md-9">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="col-md-3">
-                    <label for="phoneNummber" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phoneNummber" name="phone"placeholder="Enter your phone number"
+                <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject"placeholder="Subject"
                         required>
                 </div>
 
                 <div class="mb-3 col-lg-12">
-                    <label for="message" class="ps-3 fw-bold mb-2">Message</label>
-                    <textarea id="message" class="form-control" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                 </div>
 
                 <div class="col-lg-6">
