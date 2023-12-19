@@ -10,11 +10,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // How to validate a form using Javscript?
-    
-  
+    // Check that data was sent to the mailer.
+    if (empty($_POST['name']) OR empty($_POST['email']) OR empty($_POST['subject']) OR empty($_POST['message'])) {
+        // Set a 400 (bad request) response code and exit.
+        http_response_code(400);
+        echo "Please complete the form and try again.";
+        exit;
+    }
+
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
     $recipient = "uhuribhang211@gmail.com";
+
+    // Set the email subject.
+    $subject = "$subject";
 
     // Build the email content.
     $email_content = "Name: $name\n";
