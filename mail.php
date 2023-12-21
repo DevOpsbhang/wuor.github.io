@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = 'uhuribhang211@gmail.com';
+    $to = 'uhuribhang211@gmail.com';
     $from = 'from'.$email;
 
     // Set the email subject.
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Build the email content.
     $body ='Name: '.$name. '\n Email: '.$email. '\n $Subject: '.$subject. '\n $Message: '.$message;
 
-    mail($recipient, $from, $body);
+    mail($to, $from, $body);
 
     // $email_content = "Name: $name\n";
     // $email_content .= "Email: $email\n\n";
