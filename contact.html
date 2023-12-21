@@ -11,21 +11,22 @@
     <meta property="og:type" content="[Portfolio]">
     <meta name="description" property="og:description" content="Wuor Bhang's Software Engineering Portfolio.">
 
-  
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-	<link rel="stylesheet" href="css/ionicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href=/css/style.css>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script>
@@ -85,73 +86,90 @@
         </div>
     </header>
 
-  <section class="main-container">
-    <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Feel free to asked any questions you are looking for...</p>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-
-            
-            <form id="contact-form" class="row g-3" action="mail.php" method="POST">
-                <div class="col-md-12">
-                    <input type="text" class="form-control" name="name" placeholder="Enter Your Name"
-                        required>
-                </div>
-
-                <div class="col-md-12">
-                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="col-md-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject"
-                        required>
-                </div>
-
-                <div class="mb-3 col-lg-12">
-                    <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                </div>
-
-                <div class="col-lg-6">
-                    <input type="submit" class="btn btn-primary text-white py-3" value="Send Message">
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-  
-
-    <footer>
-        <div class="main-container">
-
-            <br>
-            <br>
-
-            <div class="row-float">
-                <span class="right links">
-                    <a target="_blank" href="https://twitter.com/Uhuribhang21"><i class="icon-twitter"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/uhuri-bhang21/"><i
-                            class="icon-linkedin"></i></a>
-                    <a target="_blank" href="mailto:uhuribhang211@gmail.com"><i class="icon-gmail"></i></a>
-                    <!-- <a target="_blank" href="https://www.instagram.com/mckinstryuhuri/"><i
-                            class="icon-instagram"></i></a> -->
-                    <a target="_blank" href="https://github.com/WuorBhang"><i class="icon-github2"></i></a>
-                    <!-- <a target="_blank" href=""><i class="icon-stackoverflow"></i></a> -->
-                </span>
-                <span class="left sub">Wuor Bhang &copy;
-                    <script>document.write(new Date().getFullYear());</script>
-                </span>
+    <section class="main-container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Contact Me</h2>
+                <p>Feel free to asked any questions you are looking for...</p>
             </div>
 
-            <br>
-            <br>
+            <div class="row d-flex contact-info mb-5">
 
+
+                <form id="contact-form" onsubmit="sendEmail()" class="row g-3" action="" method="POST">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="mb-3 col-lg-12">
+                        <textarea class="form-control" name="message" cols="30" rows="10"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <input type="submit" class="btn btn-primary text-white py-3" value="Send Message">
+                    </div>
+
+                </form>
+
+            </div>
         </div>
-    </footer>
 
+
+        <footer>
+            <div class="main-container">
+
+                <br>
+                <br>
+
+                <div class="row-float">
+                    <span class="right links">
+                        <a target="_blank" href="https://twitter.com/Uhuribhang21"><i class="icon-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/uhuri-bhang21/"><i
+                                class="icon-linkedin"></i></a>
+                        <a target="_blank" href="mailto:uhuribhang211@gmail.com"><i class="icon-gmail"></i></a>
+                        <!-- <a target="_blank" href="https://www.instagram.com/mckinstryuhuri/"><i
+                            class="icon-instagram"></i></a> -->
+                        <a target="_blank" href="https://github.com/WuorBhang"><i class="icon-github2"></i></a>
+                        <!-- <a target="_blank" href=""><i class="icon-stackoverflow"></i></a> -->
+                    </span>
+                    <span class="left sub">Wuor Bhang &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                    </span>
+                </div>
+
+                <br>
+                <br>
+
+            </div>
+        </footer>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "uhuribhang211@gmail.com",
+                    Password: "blessing s0n",
+                    To: 'uhuribhang211@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "New Contact Form Equiry",
+                    Body: "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Subject: " + document.getElementById("subject").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                    message => alert("Thanks for Contacting Me your Message is sent Succesfully")
+                );
+            }
+        </script>
 </body>
 
 </html>
