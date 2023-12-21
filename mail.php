@@ -2,11 +2,10 @@
 // Only process POST requests.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
-    $name = strip_tags(trim($_POST["name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = trim($_POST["subject"]);
-    $message = trim($_POST["message"]);
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
 
 
     // How to validate a form using Javscript?
@@ -29,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Build the email content.
     $body ='Name: '.$name. '\n Email: '.$email. '\n $Subject: '.$subject. '\n $Message: '.$message;
 
-    mail($recipient, $from, $subject, $body);
+    mail($recipient, $from, $body);
 
     // $email_content = "Name: $name\n";
     // $email_content .= "Email: $email\n\n";
