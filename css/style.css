@@ -7,14 +7,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    background: linear-gradient(135deg, #000000, #19141e);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 @import "variables";
 @import "fonts";
 @import "base";
